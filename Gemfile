@@ -7,6 +7,7 @@ gem 'rails', '3.1.3'
 
 #gem 'mysql2'
 gem 'pg'
+gem 'heroku'
 
 gem "twitter-bootstrap-rails", "~> 2.0.1.0"
 
