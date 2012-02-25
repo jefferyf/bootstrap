@@ -1,0 +1,20 @@
+/*
+ * This is a manifest file that'll automatically include all the stylesheets available in this directory
+ * and any sub-directories. You're free to add application-wide styles to this file and they'll appear at
+ * the top of the compiled file, but it's generally better to create a new file per style scope.
+ *= require_self
+ *= require twitter/bootstrap
+ *= require_tree . 
+*/
+
+html, body { height: 100%; }
+footer { background: none repeat scroll 0 0 #252525;border-top: 0 none; color: white; padding-top:19px; }
+footer h4, footer h3, footer a { color:white; font-family:"Droid Sans","Helvetica Neue",Helvetica,Arial,sans-serif}
+footer a:hover { text:decoration: underline; color:white; }
+footer #footer-floor { background: #1B1B1B }
+
+.wrapper { min-height: 100%; height: auto !important; eight: 100%; margin: 0 auto -63px; }
+.push { height: 63px; }
+/* not required for sticky footer; just pushes hero down a bit */
+.wrapper > .container { padding-top: 60px; }
+
