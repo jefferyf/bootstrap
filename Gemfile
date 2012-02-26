@@ -13,6 +13,10 @@ gem "twitter-bootstrap-rails", "~> 2.0.1.0"
 
 gem 'json'
 
+gem 'fastercsv' # Only required on Ruby 1.8 and below (for rails admin)
+gem 'rails_admin', :git => 'git://github.com/sferik/rails_admin.git'
+gem 'cancan'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -29,6 +33,12 @@ group :development, :test do
   gem 'capybara'
 end
 
+group :test do    
+  gem 'cucumber-rails'
+  gem 'capybara'
+  gem 'database_cleaner'
+end
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -41,3 +51,5 @@ end
 # To use debugger
 # gem 'ruby-debug'
 
+
+gem "devise"
