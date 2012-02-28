@@ -1,11 +1,14 @@
 Boostrap::Application.routes.draw do
-  resources :roles
 
   mount RailsAdmin::Engine => '/admin', :as => 'rails_admin'
 
   devise_for :users
 
   get "home/index"
+  
+  namespace :admin do   
+    resources :roles
+  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
